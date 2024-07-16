@@ -1,0 +1,134 @@
+.head {
+  margin-bottom: 110px;
+}
+
+.head .img {
+  width: 28%;
+}
+
+.head .img img {
+  width: 100%;
+}
+
+.left {
+  margin-left: -60px;
+}
+
+.right {
+  margin-right: -60px;
+}
+
+.core {
+  width: 30%;
+}
+
+h1 {
+  margin-bottom: 34px;
+}
+
+.bigBox .box {
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bigBox .box img {
+  width: 100%;
+}
+
+.text {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.phoneVersion-img {
+  width: 100%;
+  margin-bottom: 48px;
+  display: none;
+  margin-right: 120px;
+}
+
+.phoneVersion-img img {
+  width: 120%;
+}
+
+.buttons {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 32px;
+  gap: 20px;
+}
+
+.bigBox .boxes {
+  width: 100%;
+  padding: 0 166px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+
+@media screen and (max-width: 850px) {
+
+
+  .core {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .buttons {
+    width: 70%;
+  }
+
+  .head {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
+
+  .phoneVersion-img {
+    display: block;
+    margin-right: 80px;
+  }
+
+  .bigBox .boxes {
+    width: 100%;
+    padding: 0 34px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .bigBox .box {
+    width: 45%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .text {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .phoneVersion-img {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .core {
+    width: 100%;
+  }
+}
